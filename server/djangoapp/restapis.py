@@ -1,5 +1,5 @@
 # Uncomment the imports below before you add the function code
-# import requests
+import requests
 import os
 from dotenv import load_dotenv
 
@@ -9,7 +9,7 @@ backend_url = os.getenv(
     'backend_url', default="http://localhost:3030")
 sentiment_analyzer_url = os.getenv(
     'sentiment_analyzer_url',
-    default="http://localhost:5050/")
+    default="http://localhost:5000/")
 
 # Code for get requests to back end
 def get_request(endpoint, **kwargs):
