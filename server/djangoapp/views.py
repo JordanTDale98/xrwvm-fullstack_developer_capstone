@@ -64,7 +64,7 @@ def registration(request):
 
     if not username_exist:
         user = User.objects.create(
-            username=username, first_name=first_name, 
+            username=username, first_name=first_name,
             last_name=last_name, password=password, email=email
             )
         login(request, user)
